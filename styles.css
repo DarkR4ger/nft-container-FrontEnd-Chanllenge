@@ -1,0 +1,152 @@
+*,*::before,*::after{
+  box-sizing: border-box;
+}
+
+*{
+  margin: 0;
+  padding:0;
+}
+
+:root{
+  --clr-softBlue: hsl(215, 51%, 70%);
+  --clr-cyan: hsl(178, 100%, 50%);
+
+  /* neutral */
+  --clr-main: hsl(217, 54%, 11%);
+  --clr-card: hsl(216, 50%, 16%);
+  --clr-line: hsl(215, 32%, 27%);
+
+}
+
+img,svg{
+  max-width: 100%;
+}
+
+body{
+  background: var(--clr-main);
+  color: var(--clr-softBlue);
+  font-family: 'Outfit', sans-serif;
+  font-size: 18px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  place-content:center;
+}
+
+.container{
+  display: grid;
+  max-width: 20em;
+  padding: 1.2em;
+  margin: 1em;
+  background: var(--clr-card);
+  border-radius: 1em;
+}
+
+.img-container{
+  display:flex;
+  place-items: center;
+  place-content: center;
+  background: var(--clr-cyan);
+  border-radius: .7em;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+
+
+.nft-img{
+  border-radius: .5em;
+}
+
+
+.eye-logo{
+  position: absolute;
+  opacity: 0;
+}
+
+.img-container:active .nft-img{
+  opacity: 0.5;
+}
+.img-container:active .eye-logo{
+  opacity: 1;
+}
+
+
+
+.flex-group{
+  display: flex;
+  place-items: center;
+}
+
+.nft-details{
+  margin: 1.5em 0 1.5em 0;
+  display: grid;
+  gap: 1em;
+}
+
+.nft-details h1{
+  font-weight: 600;
+  font-size: 22px;
+  color: White;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+h1:active, h1:hover {
+  color: var(--clr-cyan);
+}
+
+.nft-offer{
+  justify-content: space-between;
+  margin : 0 0 1.5em 0;
+  font-size: 16px;
+}
+
+.left,.right{
+  gap: .5em;
+}
+
+.value{
+  font-weight: 600;
+  color: var(--clr-cyan);
+}
+
+
+hr {
+  border-color: var(--clr-line) ;
+}
+
+.author{
+  gap: 1em;
+  margin : 1em 0 1em 0;
+}
+
+.author img{
+  max-width: 2em;
+  border: 1px solid White;
+  border-radius: 100%;
+}
+
+.authour-description span{
+  font-weight: 400;
+  color: White;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+span:active ,span:hover{
+  color: var(--clr-cyan);
+}
+
+
+
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
